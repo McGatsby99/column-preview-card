@@ -1,0 +1,162 @@
+
+/* css reset */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /* root font size */
+  font-size: 15px;
+
+  /* Primary colours */
+
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+
+/* Neutral colours */
+
+/* paragraphs */
+--transparent-white: hsla(0, 0%, 100%, 0.75);
+
+/* background, headings, buttons */
+--very-light-gray: hsl(0, 0%, 95%);
+
+
+}
+
+body{
+    font-family: "Lexend Deca", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+    background-color: var(--very-light-gray);
+    
+}
+
+.container{
+    height: 70vh;
+    width: 90vw;
+    max-height: 450px;
+    max-width: 900px;
+    display: flex;
+    text-align: left;
+    color: var(--very-light-gray);
+}
+
+.container .cards{
+    padding: 45px;
+}
+
+.container h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    margin: 30px 0;
+    color: var(--very-light-gray);
+}
+
+.container p{
+    color: var(--transparent-white);
+    min-height: 170px;
+}
+
+
+.sedans{
+    background-color: var(--bright-orange);
+    border-radius: 10px 0 0 10px;
+    
+}
+
+.suv{
+    background-color: var(--dark-cyan);
+}
+
+.luxury{
+    border-radius: 0 10px 10px 0;
+    background-color: var(--very-dark-cyan);
+}
+
+.container a{
+    display: inline-block;
+    bottom: 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px/50%;
+    background-color: var(--very-light-gray);
+    text-align: center;
+    padding-top: 15px;
+        
+}
+
+.container #sedans{
+    color: var(--bright-orange);
+}
+
+.container #suv{
+    color: var(--dark-cyan);
+}
+
+.container #luxury{
+    color: var(--very-dark-cyan);
+}
+
+.container #sedans:active{
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+    
+}
+
+.container #suv:active{
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+.container #luxury:active{
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 768px){
+    
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .container{
+        margin: 50px 0;
+        min-width: 260px;
+        min-height: 1400px;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .sedans{
+        border-radius: 10px 10px 0 0;
+    
+    }
+
+
+
+    .luxury{
+        border-radius: 0 0 10px 10px;
+    }
+    
+}
